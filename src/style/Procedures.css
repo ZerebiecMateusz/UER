@@ -1,0 +1,195 @@
+.procedures_container {
+  display: flex;
+  height: 50vh;
+  width: 88%;
+  padding: 30px 0;
+  margin: 80px auto;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  border-radius: 20px;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.procedures-title {
+  width: 100%;
+  text-align: center;
+  color: #2c3e50; /* Ciemny granat */
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.section1, .section2, .section3, .section4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    height: 30vh;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 180px;
+    background: linear-gradient(90deg,#ff0000,#515151ae,#09ff00);
+    background-size: 280% 180%;
+}
+
+.circle img {
+  height: 60px;
+  margin: 0px 20px;
+}
+
+.section1 p, .section2 p, .section3 p, .section4 p {
+    display: flex;
+    margin: 20px 5px;
+    text-align: center;
+}
+.arrow {
+    background-image: url(arrow.png);
+    width: 60px;
+    height: 25vh;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*animacja circle*/
+#circle1 {
+    animation: Circle1 16s infinite;
+}
+#circle2 {
+    animation: Circle2 16s infinite;
+}
+#circle3 {
+    animation: Circle3 16s infinite;
+}
+#circle4 {
+    animation: Circle4 16s infinite;
+}
+
+/*animacja arrow*/
+#arrow1 {
+  animation: Arrow1 16s infinite;
+}
+#arrow2 {
+  animation: Arrow2 16s infinite;
+}
+#arrow3 {
+  animation: Arrow3 16s infinite;
+}
+
+
+@keyframes Circle1 {
+  0% {
+    background-position: 0% 100%;
+  }
+  25% {
+    background-position: 100% 100%;
+    transform: scale(1.2)
+  }
+  100% {
+    background-position: 100% 100%;
+    transform: scale(1.2)
+  }
+}
+@keyframes Circle2 {
+  0% {
+    background-position: 0% 100%;
+  }
+  25% {
+    background-position: 0% 100%;
+    transform: scale(1.0)
+  }
+  50% {
+    background-position: 100% 100%;
+    transform: scale(1.2)
+  }
+  100% {
+    background-position: 100% 100%;
+    transform: scale(1.2)
+  }
+}
+@keyframes Circle3 {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 0% 100%;
+    transform: scale(1.0)
+  }
+  75% {
+    background-position: 100% 100%;
+    transform: scale(1.2)
+  }
+  100% {
+    background-position: 100% 100%;
+    transform: scale(1.2)
+  }
+}
+@keyframes Circle4 {
+  0% {
+    background-position: 0% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+    transform: scale(1.0)
+  }
+  90% {
+    background-position: 100% 100%;
+    transform: scale(1.2)
+  }
+  100% {
+    background-position: 100% 100%;
+    transform: scale(1.2)
+  }
+}
+
+@keyframes Arrow1 {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes Arrow2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes Arrow3 {
+  0% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0;
+  }
+  87% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,47 @@
+.widget {
+    width: 88%;
+    margin: 100px 100px;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+.widget h1 {
+    top: 2vh;
+    padding: 50px;
+    color: black;
+}
+.accreditation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 30px;
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#logo1 {
+    background-image: url(IAM.png);
+}
+#logo2 {
+    background-image: url(BAR.png);
+}
+#logo3 {
+    background-image: url(faim.png);
+}
+#logo4 {
+    background-image: url(fedemac.png);
+}
+#logo5 {
+    background-image: url(fidi.svg);
+}
+#logo6 {
+    background-image: url(lacma.png);
+}
+#logo7 {
+    background-image: url(OMNI.jpg);
+}

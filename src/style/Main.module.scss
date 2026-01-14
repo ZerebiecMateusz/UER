@@ -3,12 +3,12 @@
 .storage {
     position: relative;
     top: -18vh;
-    width: 100vw;
+    width: 99vw;
     height: 80vh;
     z-index: -1;
     opacity: 0.9;
 }
-h1 {
+.storageH1 {
     position: relative;
     display: block;
     width: 70%;
@@ -17,6 +17,20 @@ h1 {
     margin: 0px auto 20px auto;
     font-size: 3rem;
     color: white;
+    margin-bottom: 20px;
+    text-shadow: 7px 0px 23px rgba(66, 68, 90, 1);
+}
+.storageH2 {
+    position: relative;
+    display: block;
+    width: 70%;
+    justify-content: center;
+    top: -48vh;
+    margin: 0px auto 40px auto;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 7px 0px 23px rgba(66, 68, 90, 1);
+
     margin-bottom: 20px;
 }
 .logo {
@@ -43,7 +57,7 @@ top: 70vh;
   line-height: 20vh;
   text-align: center;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 20px;
   font-family: Helvetica, Arial, Verdana, sans-serif;
   color: #725d60;
   border: 1px solid;
@@ -128,12 +142,13 @@ top: 70vh;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background: #f7732f;
+  background: #a0e3fb;
   z-index: 2;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
-  line-height: 10vh;
   text-align: center;
+  border-radius: 5px;
 }
+
 
 .box_flip .box_a {
   width: 15vw;
@@ -145,6 +160,7 @@ top: 70vh;
 .box_flip .box_a .back {
   width: 15vw;
   height: 20vh;
+  background-size: cover;
 }
 
 .box_flip .box_b {
@@ -167,6 +183,12 @@ top: 70vh;
 .box_flip .box_c .back {
   width: 15vw;
   height: 20vh;
+  object-fit: contain;
+}
+.back img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .box_flip .box_d {
@@ -188,4 +210,53 @@ top: 70vh;
 .box_flip .box_e .back {
   width: 15vw;
   height: 20vh;
+}
+//Logo company section
+.container {
+  overflow: hidden;
+}
+.LogoCompany {
+    position: relative;
+    width: 200vw;
+    height: 20vh;
+    margin: 0px auto 20px auto;
+    @include d-flex-row();
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    overflow: hidden;
+}
+.logo_Container {
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 120px;;
+    @include box-shadow();
+    border-radius: 10px;
+    background-color: white;
+    animation: float 40s linear infinite;
+}
+.LogoCompany + .LogoCompany .logo_Container{
+    animation: float 60s linear infinite;
+}
+.logo_img {
+    flex-shrink: 0;
+    position: absolute;
+    padding: 2px 2px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50vw);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
 }

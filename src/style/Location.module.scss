@@ -1,0 +1,38 @@
+.google_map_code {
+    display: flex;
+    color: black;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.google_map_code h1{
+    position: static;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+.google_map_code h2{
+    color: black;
+    position: static;
+    text-align: center;
+    text-shadow: none;
+}
+.location_Cracow {
+    width: 88%;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    border-radius: 20px;
+}
+.location_Warsaw {
+    width: 88%;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    border-radius: 20px;
+}

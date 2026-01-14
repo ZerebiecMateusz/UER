@@ -1,0 +1,46 @@
+.paralax {
+    width: 100vw;
+    height: 300vh;
+    box-sizing: border-box;
+}
+.sectionBkg1 {
+    height: 100vh;
+    background-image: url(girlAirport.jpg);
+    background-position: 50% 60%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.sectionBkg2 {
+    height: 100vh;
+    background-image: url(airport2.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.sectionBkg3 {
+    height: 100vh;
+    background-image: url(familyTravel.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.text_area {
+    padding: 100px 0;
+    height: auto;
+    text-align: center;
+    background: black;
+}
+.text_area h2 {
+    position: static;
+    font-size: 40px;
+    color: white;
+    margin: auto;
+    text-transform: uppercase;
+}
+.text_area p {
+    color: white;
+    font-size: 18px;
+    width: 90%;
+    margin: auto;
+    line-height: 1.6;
+}

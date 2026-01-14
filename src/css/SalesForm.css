@@ -1,0 +1,118 @@
+/* Kontener główny formularza */
+.contact_container {
+  display: flex;
+  width: 88%;
+  padding: 30px 0;
+  margin: 80px auto;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  border-radius: 20px;
+}
+.contact {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #2c3e50; /* Ciemny granat */
+  margin: 40px 40px;
+  background-color: #f9f9f9; /* Lekko szare tło strony */
+}
+.contact h1 {
+  width: 100%;
+}
+.contact h2.name_company {
+  width: 100%;
+  text-align: center;
+}
+.contact_description {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.contact_description img {
+  margin-right: 20px;
+}
+
+.form-container {
+  width: 40%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Lekko szare tło strony */
+  font-family: Arial, sans-serif;
+}
+
+/* Tytuł */
+.form-title {
+  position: static;
+  text-align: center;
+  color: #2c3e50; /* Ciemny granat */
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.form-contact {
+  position: static;
+  text-align: center;
+  font-size: 24px;
+  color: #2c3e50; /* Ciemny granat */
+}
+
+/* Grupy pól (label + input) */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etykiety nad polami */
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Czerwona gwiazdka */
+.required-mark {
+  color: #b91c1c;
+}
+
+/* Pola tekstowe i select */
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #777;
+  background-color: #ccc; /* Ciemniejsze szare tło inputów jak na zdjęciu */
+  font-size: 16px;
+  width: 100%; /* Rozciągnięcie na całą szerokość */
+  box-sizing: border-box; /* Aby padding nie psuł szerokości */
+}
+
+/* Input po kliknięciu */
+.form-group input:focus,
+.form-group select:focus {
+  outline: 2px solid #555;
+  background-color: #fff;
+}
+
+/* Przycisk Submit */
+.submit-btn {
+  display: block;
+  width: 200px;
+  margin: 30px auto 0; /* Wyśrodkowanie */
+  padding: 12px;
+  background-color: #b91c1c; /* Czerwony kolor */
+  color: white;
+  border: 1px solid #000;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.submit-btn:hover {
+  background-color: #991b1b;
+}
