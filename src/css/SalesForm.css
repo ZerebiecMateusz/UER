@@ -95,6 +95,21 @@
   outline: 2px solid #555;
   background-color: #fff;
 }
+.message-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    resize: vertical; /* Pozwala użytkownikowi zmieniać tylko wysokość */
+    min-height: 100px;
+}
+
+.message-input:focus {
+    outline: none;
+    border-color: #0056b3; /* kolor Twojej marki */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
 
 /* Przycisk Submit */
 .submit-btn {
@@ -115,4 +130,77 @@
 
 .submit-btn:hover {
   background-color: #991b1b;
+}
+.input-error {
+    border: 2px solid #ff4d4d !important;
+    background-color: #fff5f5;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+.submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+@media (max-width: 1024px) {
+    .contact_container {
+        flex-direction: column; /* Dane kontaktowe nad formularzem */
+        margin: 40px auto;
+        padding: 20px 0;
+    }
+
+    .contact, .form-container {
+        width: 90%; /* Rozciągamy sekcje na prawie całą szerokość */
+        margin: 20px auto;
+        background-color: transparent; /* Spójność z kontenerem */
+    }
+
+    .contact_description {
+        justify-content: flex-start; /* Lepiej wygląda wyrównane do lewej na mobile */
+        padding-left: 10%;
+    }
+}
+@media (max-width: 768px) {
+    .contact_container {
+      position: relative;
+      top: 60vh;
+    }
+}
+@media (max-width: 480px) {
+    .form-title {
+        font-size: 24px;
+    }
+    
+    .form-contact {
+        font-size: 18px;
+    }
+
+    .contact_description {
+        padding-left: 0;
+        flex-direction: column; /* Ikona nad tekstem, jeśli mało miejsca */
+        text-align: center;
+    }
+
+    .contact_description img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Ułatwienie klikania w inputy na małych ekranach */
+    .form-group input,
+    .form-group select,
+    .message-input {
+        font-size: 16px; /* Zapobiega auto-zoomowi w iOS Safari */
+        padding: 15px 10px;
+    }
+    
+    .submit-btn {
+        width: 100%; /* Przycisk na całą szerokość na telefonie */
+    }
 }

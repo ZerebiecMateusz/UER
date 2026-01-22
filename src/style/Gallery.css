@@ -1,0 +1,72 @@
+.gallery-section {
+   width: 88%;
+  padding: 30px 0;
+  margin: 80px auto;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  border-radius: 20px;
+    text-align: center;
+}
+
+.gallery-title {
+    text-align: center;      /* Centrowanie tekstu */
+    margin: 40px auto;       /* Odstęp góra/dół i centrowanie kontenera */
+    width: 100%;             /* Upewnienie się, że zajmuje pełną szerokość */
+    font-size: 2.5rem;       /* Wielkość czcionki */
+    font-weight: bold;
+    color: #333;             /* Ciemnoszary kolor dla lepszej czytelności */
+}
+
+.gallery-title::after {
+    content: '';
+    display: block;
+    width: 260px;             /* Szerokość linii */
+    height: 4px;             /* Grubość linii */
+    background-color: #0056b3; /* Kolor Twojej marki */
+    margin: 10px auto 0;     /* Centrowanie linii względem tekstu */
+    border-radius: 2px;
+}
+
+.gallery-wrapper {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+/* Możesz też dopasować wielkość miniaturek */
+.image-gallery-thumbnail img {
+    height: 80px;
+    object-fit: cover;
+}
+.image-gallery-slide .image-gallery-image {
+    display: flex;
+    justify-content: center; /* Centrowanie w poziomie */
+    align-items: center;     /* Centrowanie w pionie */
+    background: #f8f8f8;    /* Opcjonalne: delikatne tło dla pustych przestrzeni */
+    height: 500px;           /* Możesz dostosować tę wysokość do swoich potrzeb */
+}
+
+/* Zachowanie proporcji zdjęć */
+.image-gallery-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto !important;  /* Zapobiega rozciąganiu w poziomie */
+    height: auto !important; /* Zapobiega zniekształceniom */
+    object-fit: contain;     /* Gwarantuje, że całe zdjęcie zmieści się w kadrze */
+}
+
+/* Centrowanie miniaturek na dole (jeśli są) */
+.image-gallery-thumbnails-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .gallery-section {
+      position: relative;
+      top: 60vh;
+    }
+    .image-gallery-slide .image-gallery-image {
+        height: 300px; /* Mniejsza wysokość na smartfony */
+    }
+}

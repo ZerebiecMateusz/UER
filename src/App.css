@@ -1,0 +1,64 @@
+@import './style/index.scss';
+.header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #3498db;;
+}
+
+@media (max-width: 768px) {
+    .image-gallery-slide .image-gallery-image {
+        height: 300px !important; /* Mniejsza wysokość na mobile */
+    }
+
+    .image-gallery-thumbnails-wrapper {
+        display: none; /* Opcjonalnie: ukryj miniaturki na małych ekranach dla czystości */
+    }
+}
+@media (max-width: 600px) {
+    /* Zakładając, że formularz ma klasę .sales-form */
+    .sales-form-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-row {
+        flex-direction: column; /* Pola jedno pod drugim */
+    }
+
+    .form-group {
+        width: 100% !important;
+    }
+
+    input, select, textarea {
+        font-size: 16px; /* Zapobiega auto-zoomowi w iOS Safari */
+    }
+}
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        margin: 10px;
+        padding: 20px;
+        max-height: 80vh; /* Nie większy niż 80% wysokości ekranu */
+        overflow-y: auto; /* Przewijanie tekstu wewnątrz modala */
+    }
+
+    .modal_border, .modal_border2 {
+        padding: 5px; /* Zmniejszamy ozdobne ramki na mobile */
+    }
+    
+    .modal-content h2 {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+}

@@ -1,0 +1,96 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 60px 0 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    color: #f0f0f0;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.footer-section h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #0056b3; /* Kolor Twojej marki */
+    margin-top: 8px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+    padding-left: 5px; /* Delikatny efekt po najechaniu */
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    filter: invert(1); /* Zmienia kolor ikon na biały, jeśli są czarne */
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        position: relative;
+        top: 60vh;
+        text-align: center;
+    }
+    .footer-section h3::after {
+        margin: 8px auto 0;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+}
