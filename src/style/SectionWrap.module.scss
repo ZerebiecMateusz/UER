@@ -2,7 +2,6 @@
     width: 100vw;
     height: 300vh;
     position: relative;
-    top: -10vh;
 }
 .sectionBkg1 {
     background-image: url(girlAirport.jpg);
@@ -42,7 +41,8 @@
 }
 @media (max-width: 768px) {
     .paralax {
-    top: 60vh;
+        position: relative !important;
+        top: 20px !important;
 }
     .sectionBkg1, .sectionBkg2, .sectionBkg3 {
         height: 60vh;

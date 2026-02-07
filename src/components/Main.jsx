@@ -55,16 +55,21 @@ const services = [
 
     return (
         <>
-            <img className={s.storage} src={image} alt="storage" />
-            <h1 className={s.storageH1}>PROFESSIONAL MOVING AND STORAGE</h1>
-            <h2 className={s.storageH2}>{t('main_quote')}</h2>
-            <img className={s.logo} src={logo} alt="Universal Express Logo" />
-            {/*kontakt button*/}
-            <div className={s.buttonWrapper}>
-                <button onClick={scrollToContact} className={s.contactBtn}>
-                    {t('contact_button')}
-                </button>
-            </div>
+            <section className={s.storage}>
+                <img className={s.storageIMG} src={image} alt="storage" />
+                <div className={s.storage_content}>
+                    <h1 className={s.storageH1}>PROFESSIONAL MOVING AND STORAGE</h1>
+                    <h2 className={s.storageH2}>{t      ('main_quote')}</h2>
+                    <img className={s.logo} src={logo} alt="Universal Express Logo" />
+                    {/*kontakt button*/}
+                    <div className={s.buttonWrapper}>
+                        <button onClick={scrollToContact} className={s.contactBtn}>
+                            {t('contact_button')}
+                        </button>
+                </div>
+                </div>
+            </section>
+            
 
             {/* Animation Tiles */}
             <div className={s.box_flip}>

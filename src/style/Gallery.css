@@ -63,8 +63,8 @@
 }
 @media (max-width: 768px) {
     .gallery-section {
-      position: relative;
-      top: 60vh;
+      position: relative !important;
+        top: 20px !important;
     }
     .image-gallery-slide .image-gallery-image {
         height: 300px; /* Mniejsza wysokość na smartfony */

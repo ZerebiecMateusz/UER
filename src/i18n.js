@@ -5,6 +5,8 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
   pl: {
     translation: {
+      "seo_title": "Przeprowadzki Międzynarodowe: Japonia, Korea, USA | Universal Express",
+      "seo_description": "Specjalistyczne przeprowadzki do Japonii, USA i Europy. Obsługa konsulatów i relokacje biur od 1990 roku. Sprawdź naszą ofertę!",
       "nav_who": "Kim jesteśmy",
       "nav_procedures": "Procedury",
       "nav_gallery": "Galeria",
@@ -101,6 +103,8 @@ const resources = {
   },
   en: {
     translation: {
+      "seo_title": "International Removals: Japan, Korea, USA Europe, Asia, America | Universal Express",
+      "seo_description": "Specialists in diplomatic and consulate relocations. We serve USA, Europe, and worldwide. Reliable moving solutions since 1990.",
       "nav_who": "About Us",
       "nav_procedures": "Procedures",
       "nav_gallery": "Gallery",
@@ -196,6 +200,8 @@ const resources = {
   },
   ko: { // Koreański
     translation: {
+      "seo_title": "Universal Express | 폴란드발 한국·일본 해외이사 전문",
+      "seo_description": "폴란드 최대의 해외이사 및 리로케이션 전문 기업. 한국, 일본 및 전 세계 어디로든 안전한 운송 서비스를 제공합니다. 1990년 설립.",
       "nav_who": "회사 소개",
       "nav_procedures": "진행 절차",
       "nav_gallery": "갤러리",
@@ -286,6 +292,8 @@ const resources = {
   },
   ja: { // Japoński
     translation: {
+      "seo_title": "Universal Express | ポーランドから日本・韓国への海外引越し",
+      "seo_description": "ポーランド最大の国際引越し・リロケーション専門企業。日本、韓国、そして世界中へ安全な輸送サービスを提供いたします。1990年創業。",
       "nav_who": "私たちについて",
       "nav_procedures": "引越しの流れ",
       "nav_gallery": "ギャラリー",

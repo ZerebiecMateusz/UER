@@ -220,9 +220,19 @@
 }
 @media (max-width: 768px) {
     .procedures_container {
-      position: relative;
-      top: 60vh;
+      position: relative !important;
+        top: 20px !important;
     }
+        /* Animacje uruchamiają się tylko, gdy nadrzędny kontener ma klasę .animate */
+    .animate #circle1 { animation: Circle1 10s infinite; }
+    .animate #circle3 { animation: Circle3 10s infinite; }
+    .animate #circle2 { animation: Circle2 10s infinite; }
+    .animate #circle4 { animation: Circle4 10s infinite; }
+
+    .animate #arrow1 { animation: Arrow1 10s infinite; }
+    .animate #arrow2 { animation: Arrow2 10s infinite; }
+    .animate #arrow3 { animation: Arrow3 10s infinite; }
+
 }
 
 @media (max-width: 480px) {

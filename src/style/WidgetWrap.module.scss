@@ -1,12 +1,3 @@
-.widget {
-    width: 88%;
-    margin: 100px auto;
-    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-}
-
 #logo1 {
     background-image: url(IAM.png);
 }
@@ -80,7 +71,7 @@
     }}
 @media (max-width: 768px) {
     .widget {
-      position: relative;
-      top: 60vh;
+      position: relative !important;
+        top: 20px !important;
     }
 }

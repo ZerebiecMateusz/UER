@@ -39,8 +39,8 @@
 }
 @media (max-width: 768px) {
     .google_map_code {
-      position: relative;
-      top: 60vh;
+      position: relative !important;
+        top: 20px !important;
     }
     .google_map_code iframe {
         width: 300px;
